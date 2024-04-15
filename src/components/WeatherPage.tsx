@@ -28,7 +28,9 @@ const WeatherPage: React.FC = () => {
     const fetchWeather = async () => {
       try {
         const response = await fetch(
-          `http://api.openweathermap.org/data/2.5/weather?q=${cityId}&appid=cbbdf6296227c362411653ac32ac230d`
+          `http://api.openweathermap.org/data/2.5/weather?q=${cityId}&appid=cbbdf6296227c362411653ac32ac230d`,{
+            referrerPolicy: "unsafe-url" 
+          }
         );
         const data=await response.json();
           console.log(data);
