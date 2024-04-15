@@ -7,6 +7,7 @@ import lightrain from '../light-rain.svg'
 import moderaterain from '../moderate-rain.svg'
 import scattercloud from '../scatter-cloud.svg'
 import overcastcloud from '../scatter-cloud.svg'
+
 interface WeatherData {
   temperature: number;
   weatherDescription: string;
