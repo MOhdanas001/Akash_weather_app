@@ -6,7 +6,7 @@ import clearsky from '../clear-sky.svg'
 import lightrain from '../light-rain.svg'
 import moderaterain from '../moderate-rain.svg'
 import scattercloud from '../scatter-cloud.svg'
-
+import overcastcloud from '../scatter-cloud.svg'
 interface WeatherData {
   temperature: number;
   weatherDescription: string;
@@ -64,6 +64,7 @@ const WeatherPage: React.FC = () => {
     'light rain': lightrain,
     'scattered clouds': moderaterain,
     'moderate rain': scattercloud,
+    'overcast clouds': overcastcloud,
   };
   
   return (
